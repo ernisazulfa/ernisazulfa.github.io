@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio & Web Pribadi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#a855f7',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Nisa<span class="text-white">.dev</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-300">
+                <a href="#home" class="hover:text-primary transition-colors">Beranda</a>
+                <a href="#about" class="hover:text-primary transition-colors">Tentang</a>
+                <a href="#skills" class="hover:text-primary transition-colors">Keahlian</a>
+                <a href="#projects" class="hover:text-primary transition-colors">Proyek</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Kontak</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block px-5 py-2.5 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:shadow-lg hover:shadow-primary/30 transition-all duration-300">
+                Hubungi Saya
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-2xl text-slate-300 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700 px-6 py-4 space-y-3">
+            <a href="#home" class="block hover:text-primary">Beranda</a>
+            <a href="#about" class="block hover:text-primary">Tentang</a>
+            <a href="#skills" class="block hover:text-primary">Keahlian</a>
+            <a href="#projects" class="block hover:text-primary">Proyek</a>
+            <a href="#contact" class="block hover:text-primary">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen pt-32 pb-20 flex items-center justify-center relative overflow-hidden">
+        <!-- Background Glowing Effect -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl -z-10"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="px-4 py-2 rounded-full bg-slate-800 text-primary border border-slate-700 text-sm font-medium inline-block mb-6">
+                👋 Selamat Datang di Portfolio Saya
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Halo, Saya <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Nisa</span> <br>
+                Mahasiswi Teknik Informatika
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto">
+                Suka memecahkan masalah dengan pemrograman, merancang aplikasi web modern, dan berkreasi melalui desain media digital.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-semibold shadow-lg shadow-primary/25 hover:scale-105 transition-all">
+                    Lihat Proyek <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#about" class="px-8 py-3.5 rounded-full bg-slate-800 text-slate-200 border border-slate-700 font-semibold hover:bg-slate-700 transition-all">
+                    Tentang Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="w-full h-80 md:h-96 rounded-2xl bg-gradient-to-tr from-primary to-secondary p-1 shadow-xl">
+                        <div class="w-full h-full bg-slate-900 rounded-2xl flex items-center justify-center p-8">
+                            <i class="fa-solid fa-code text-8xl text-slate-700"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        Saya sedang menempuh pendidikan di jurusan Teknik Informatika. Saya memiliki antusiasme tinggi dalam mempelajari struktur data, algoritma, pengembangan web, serta pembuatan konten visual dan editing media.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 text-slate-300">
+                        <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700">
+                            <h3 class="text-2xl font-bold text-primary mb-1">2+</h3>
+                            <p class="text-sm text-slate-400">Tahun Belajar Coding</p>
+                        </div>
+                        <div class="p-4 bg-slate-900/60 rounded-xl border border-slate-700">
+                            <h3 class="text-2xl font-bold text-secondary mb-1">10+</h3>
+                            <p class="text-sm text-slate-400">Proyek & Tugas Akhir</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Keahlian & Teknologi</h2>
+                <p class="text-slate-400">Bahasa pemrograman dan tools yang sering saya gunakan</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 text-center hover:border-primary transition-all duration-300">
+                    <i class="fa-brands fa-java text-4xl text-orange-500 mb-3"></i>
+                    <h3 class="font-semibold">Java</h3>
+                </div>
+                <!-- Skill 2 -->
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 text-center hover:border-primary transition-all duration-300">
+                    <i class="fa-brands fa-python text-4xl text-yellow-400 mb-3"></i>
+                    <h3 class="font-semibold">Python</h3>
+                </div>
+                <!-- Skill 3 -->
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 text-center hover:border-primary transition-all duration-300">
+                    <i class="fa-brands fa-html5 text-4xl text-red-500 mb-3"></i>
+                    <h3 class="font-semibold">HTML & CSS</h3>
+                </div>
+                <!-- Skill 4 -->
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 text-center hover:border-primary transition-all duration-300">
+                    <i class="fa-solid fa-database text-4xl text-blue-400 mb-3"></i>
+                    <h3 class="font-semibold">MySQL / XAMPP</h3>
+                </div>
+                <!-- Skill 5 -->
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 text-center hover:border-primary transition-all duration-300">
+                    <i class="fa-solid fa-paintbrush text-4xl text-pink-500 mb-3"></i>
+                    <h3 class="font-semibold">Canva</h3>
+                </div>
+                <!-- Skill 6 -->
+                <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 text-center hover:border-primary transition-all duration-300">
+                    <i class="fa-solid fa-video text-4xl text-emerald-400 mb-3"></i>
+                    <h3 class="font-semibold">Video Editing</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Proyek Terbaru</h2>
+                <p class="text-slate-400">Beberapa karya dan studi kasus yang telah saya kerjakan</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center">
+                        <i class="fa-solid fa-utensils text-5xl text-primary"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-primary font-semibold tracking-wider uppercase">Mobile / Web App</span>
+                        <h3 class="text-xl font-bold mt-1 mb-2">Aplikasi Kantin Pintar</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Studi kelayakan dan sistem pemesanan kantin berbasis aplikasi untuk mempercepat antrean mahasiswa.
+                        </p>
+                        <a href="#" class="text-primary hover:text-secondary text-sm font-semibold inline-flex items-center">
+                            Detail Proyek <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center">
+                        <i class="fa-solid fa-cash-register text-5xl text-secondary"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-secondary font-semibold tracking-wider uppercase">Desktop App</span>
+                        <h3 class="text-xl font-bold mt-1 mb-2">Sistem Kasir & Penilaian</h3>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Program logika transaksi kasir dan perhitungan nilai berbasis bahasa pemrograman Java & C.
+                        </p>
+                        <a href="#" class="text-primary hover:text-secondary text-sm font-semibold inline-flex items-center">
+                            Detail Proyek <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Mari Bekerja Sama</h2>
+            <p class="text-slate-400 mb-8">Punya pertanyaan, proyek, atau sekadar ingin menyapa? Silakan hubungi saya!</p>
+            <form onsubmit="event.preventDefault(); alert('Pesan Anda berhasil terkirim!');" class="space-y-4 max-w-xl mx-auto text-left">
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-2">Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan nama kamu" class="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-primary" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-2">Email</label>
+                    <input type="email" placeholder="nama@email.com" class="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-primary" required>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-2">Pesan</label>
+                    <textarea rows="4" placeholder="Tuliskan pesan kamu di sini..." class="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-primary" required></textarea>
+                </div>
+                <button type="submit" class="w-full py-3.5 rounded-lg bg-gradient-to-r from-primary to-secondary text-white font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all">
+                    Kirim Pesan
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <p>© 2026 Nisa. Dibuat dengan <i class="fa-solid fa-heart text-red-500"></i> & Tailwind CSS.</p>
+    </footer>
+
+    <!-- JavaScript Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
